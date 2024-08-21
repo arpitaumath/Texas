@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+}
+.img-sec{
+    width: 100%;
+    height: 130vh;
+    background-image: url(./img/bg-img.png);
+    background-position:center ;
+    background-size: cover;
+}
+.navbar{
+    width: 80%;
+    height: 10vh;
+    margin-inline: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    
+}
+.navbar h4{
+    width: 10%;
+    color: rgb(115, 185, 213);
+}
+.navbar ul{
+    width: 70%;
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    padding-inline: 15px;
+    font-weight: 900;
+}
+.navbar i{
+    font-size: 20px;
+}
+#btn-1{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-inline: 20px;
+    color: skyblue;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(241, 248, 249);
+}
+#btn-2{
+    width: 40px;
+    height: 40px;
+    color: white;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 159);
+}
+.box{
+    width: 35%;
+    height: 450px;
+    color: white;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(6, 129, 177);
+}
+.box h1{
+    font-size: 60px;
+}
+.box h5{
+    padding-block: 20px;
+    font-size: 30px;
+}
+.box h6{
+    font-size: 15px;
+}
+.text-area{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-sec{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    border-radius: 10px;
+    margin-block: 20px;
+   
+}
+.text-sec:first-child{
+    background-color: rgb(248, 246, 246);
+}
+.left{
+    width: 50%;
+    height: 100%;
+    margin-inline: 10px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(248, 246, 246);
+}
+.right{
+    width: 50%;
+    height: 100%;
+    margin-inline: 10px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(248, 246, 246);
+}
+.text-sec h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: darkblue;
+}
+.text-sec h5{
+    font-size: 25px;
+    color: rgb(83, 82, 82);
+    padding-block: 40px;
+}
+.text-sec a{
+    color: rgb(116, 190, 219);
+    font-size: 25px;
+}
+.text-sec h2{
+    font-size: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#first{
+    color: rgb(244, 68, 97);
+}
+#second{
+    color: green;
+}
+#third{
+    color: rgb(163, 3, 163);
+}
+#fourth{
+    color: rgb(232, 190, 41);
+}
+.foter-sec{
+    width: 100%;
+    height: auto;
+
+}
+.ul {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding-inline: 10%;
+    padding-top: 20px;
+    justify-content: space-around;
+
+}
+.ul ul{
+    width: 22%;
+    height: 100%;
+}
+.ul ul li{
+    list-style: none;
+    padding-block: 10px;
+}
+.bottom{
+    width: 95%;
+    display: flex;
+    padding: 5%;
+    
+}
+.bottom .left h5{
+    font-size:15px;
+}
+.bottom .right span{
+    
+    display: flex;
+    justify-content: end;
+}
+.right span i{
+    font-size: 30px;
+    margin-inline: 10px;
+}
+.right span i:first-child{
+    color: rgb(33, 102, 130);
+}
+.right span i:nth-child(2){
+    color: rgb(144, 15, 122);
+}
+.right span i:last-child{
+    color: rgb(114, 192, 222);
+}
+
+
+
+
+/* responsive 768 */
+@media(max-width:768px){
+    .img-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    .navbar ul li{
+        font-size: 10px;
+        padding-inline: 5px;
+        font-weight: 200;
+    }
+    #btn-1{
+       display: none;
+    }
+   #btn-2{
+    margin-left: 30px;
+   }
+    .navbar i{
+        font-size: 15px;
+    }
+    .box{
+        width: 100%;
+        height: 250px;
+        margin: 0;
+    }
+    .box h1{
+        font-size: 40px;
+    }
+    .box h5{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .box h6{
+        font-size: 15px;
+    }
+    .text-sec{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+        margin-block: 10px;
+        padding: 20px;
+        margin-inline: 0;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-inline: 0;
+    }
+    .text-sec h1{
+        font-size: 40px;
+    }
+    .text-sec h5{
+        padding-block: 20px;
+        font-size: 20px;
+
+    }
+    .text-sec a{
+        font-size: 15px;
+    }
+    .ul{
+        height: auto;
+
+        width: 100%;
+        
+    }
+    .ul ul{
+        margin-block: 10px;
+    }
+    .ul ul li{
+        padding: 0;
+    }
+    .bottom{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 0;
+    }
+    .bottom .left{
+        width: 50%;
+        margin: 0;
+    }
+    .bottom .left h5{
+        font-size: 10px;
+        margin: 0;
+    }
+    .bottom .right{
+        width: 50%;
+    }
+}
+
+
+/* responsive 480 */
+@media(max-width:480px){
+   .navbar{
+    justify-content: space-between;
+   }
+    .navbar ul {
+        display: none;
+    }
+    .navbar img{
+        position: absolute;
+
+    }
+    .navbar h4{
+        padding-left: 50px;
+    }
+    .box{
+        height: auto;
+    }
+    .text-sec h1{
+        font-size: 30px;
+    }
+    .text-sec h5{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .foter-sec .ul{
+        flex-direction: column;
+    }
+    .ul ul{
+        width: 100%;
+    }
+    .ul ul li{
+        margin-block:2px ;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .bottom .left{
+      width: 100%;
+    }
+    .bottom .left h5{
+        font-size: 13px;
+    }
+    .bottom .right{
+        width: 100%;
+        justify-content: start;
+    }
+    .bottom .right span{
+        justify-content: start;
+        font-size: 20px;
+    }
+
+}
